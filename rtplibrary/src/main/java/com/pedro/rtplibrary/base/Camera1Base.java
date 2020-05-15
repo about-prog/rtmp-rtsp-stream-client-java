@@ -775,4 +775,12 @@ public abstract class Camera1Base
   public void onAudioFormat(MediaFormat mediaFormat) {
     recordController.setAudioFormat(mediaFormat);
   }
+
+
+  public void stopMicrophone() {
+    microphoneManager.stop();
+  }
+  public void startMicrophone() {
+    microphoneManager.start();
+  }
 }
