@@ -781,6 +781,9 @@ public abstract class Camera1Base
     microphoneManager.stop();
   }
   public void startMicrophone() {
+    microphoneManager.createMicrophone(sampleRate, isStereo, echoCanceler, noiseSuppressor);
+
     microphoneManager.start();
+
   }
 }
